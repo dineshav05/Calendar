@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achala Ekadashi Calendar 2026 & Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fdfbf7;
+            color: #4a4a4a;
+        }
+        h1, h2, h3, .serif {
+            font-family: 'Playfair Display', serif;
+        }
+        .card-shadow {
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .card-shadow:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.15);
+        }
+        .bg-gradient-spiritual {
+            background: linear-gradient(135deg, #fff1eb 0%, #ace0f9 100%);
+        }
+        .bg-gradient-header {
+            background: linear-gradient(to right, #ff9966, #ff5e62);
+        }
+        .text-gold {
+            color: #d4af37;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="relative w-full h-96 bg-gray-900 overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1604537466158-719b1972feb8?q=80&w=2071&auto=format&fit=crop" alt="Spiritual Background" class="absolute inset-0 w-full h-full object-cover opacity-60">
+        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent"></div>
+        <div class="absolute bottom-0 left-0 w-full p-8 md:p-16 text-white text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 tracking-wide text-amber-300 drop-shadow-lg">Ekadashi 2026</h1>
+            <p class="text-xl md:text-2xl font-light tracking-wider opacity-90">The Path to Detox, Clarity, and Spiritual Bliss</p>
+        </div>
+    </header>
+
+    <!-- Significance Section -->
+    <section class="max-w-7xl mx-auto px-4 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <h2 class="text-4xl font-bold text-gray-800">Why Observe Ekadashi?</h2>
+                <div class="h-1 w-20 bg-amber-500 rounded"></div>
+                
+                <div class="bg-white p-6 rounded-2xl shadow-sm border-l-4 border-amber-500">
+                    <h3 class="text-xl font-bold text-amber-600 mb-2">Scientific Benefit: Autophagy</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Fasting for 24 hours gives your digestive system a complete rest. This triggers <strong>Autophagy</strong>, a biological process where cells clean out damaged components and toxins. It lowers insulin levels and reduces inflammation.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border-l-4 border-indigo-500">
+                    <h3 class="text-xl font-bold text-indigo-600 mb-2">Spiritual Science: The Lunar Pull</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Just as the moon moves the oceans, it affects the water in the human body. On the 11th day (Ekadashi), the atmospheric pressure is lowest. Fasting on this day prevents fluid retention and utilizes this natural energy updraft to control the mind and senses.
+                    </p>
+                </div>
+            </div>
+            <div class="relative h-96 rounded-3xl overflow-hidden shadow-2xl group">
+                <img src="https://images.unsplash.com/photo-1518175984464-3286b2064953?q=80&w=2070" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Meditation">
+                <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition duration-500"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calendar Grid -->
+    <section class="bg-gray-50 py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-4">The 2026 Almanac</h2>
+            <p class="text-center text-gray-500 mb-12 max-w-2xl mx-auto">A complete guide to all 26 Ekadashis of 2026. Includes the rare Adhik Maas (Extra Month) observances.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="calendar-grid">
+                <!-- Cards will be injected here via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-2xl serif mb-4">Om Namo Bhagavate Vasudevaya</h2>
+            <p class="opacity-60 text-sm">May this calendar guide you towards health, peace, and liberation in 2026.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Data Source for 2026
+        const ekadashiData = [
+            {
+                month: "January",
+                date: "14",
+                day: "Wednesday",
+                name: "Shattila Ekadashi",
+                meaning: "Six types of Sesame",
+                benefit: "Cures diseases and purifies sins via Sesame donation.",
+                image: "https://images.unsplash.com/photo-1606744837616-56c9a5c6a6eb?q=80&w=800&auto=format&fit=crop"
+            },
+            {
+                month: "January",
+                date: "29",
+                day: "Thursday",
+                name: "Jaya Ekadashi",
+                meaning: "Victory",
+                benefit: "Grants victory over inner enemies and clears ghostly karmas.",
+                image: "https://images.unsplash.com/photo-1563804803738-4665476d05f2?q=80&w=800&auto=format&fit=crop"
+            },
+            {
+                month: "February",
+                date: "13",
+                day: "Friday",
+                name: "Vijaya Ekadashi",
+                meaning: "Triumph",
+                benefit: "Ensures success in difficult ventures and court cases.",
+                image: "https://images.unsplash.com/photo-1621617711915-185458022837?q=80&w=800&auto=format&fit=crop"
+            },
+            {
+                month: "February",
+                date: "27",
+                day: "Friday",
+                name: "Amalaki Ekadashi",
+                meaning: "The Amla Tree",
+                benefit: "Worship of the Indian Gooseberry tree; brings health and abundance.",
+                image: "https://images.unsplash.com/photo-1546842931-886c185b4c8c?q=80&w=800&auto=format&fit=crop"
+            },
+            {
+                month: "March",
+                date: "15",
+                day: "Sunday",
+                name: "Papamochani Ekadashi",
+                meaning: "Remover of Sins",
+                benefit: "Specifically designed to burn away the heaviest of past sins.",
+                image: "https://images.unsplash.com/photo-1526715655761-4645281bd8f2?q=80&w=800&auto=format&fit=crop"
+            },
+            {
+                month: "March",
+                date: "29",
+                day: "Sunday",
+                name: "Kamada Ekadashi",
+                meaning: "Fulfiller of Desires",
+                benefit: "The first Ekadashi of the Hindu New Year; fulfills deep desires.",
+                image: "https://images.unsplash.com/photo-1476901861694-8255b7468c4d?q=80&w=800&auto=format&fit=crop"
+            },
+            {
+                month: "April",
+                date: "13",
+                day: "Monday",
+                name: "Varuthini Ekadashi",
+                meaning: "Protected/Armored",
+                benefit: "Protects the devotee from misfortune and bad luck.",
+                image: "https://images.unsplash.com/photo-1542318084-2d08a05c6560?q=80&w=800&auto=format&fit=crop"
+            },
+            {
+                month: "April",
+                date: "27",
+                day: "Monday",
+                name: "Mohini Ekadashi",
+                meaning: "The Enchantress",
+                benefit: "Removes illusions (Maya) and attachments that cause suffering.",
+                image: "https://images.unsplash.com/photo-1598425237654-567429523583?q=80&w=800&auto=format&fit=crop"
+            },
+            {
+                month: "May",
+                date: "13",
+                day: "Wednesday",
+                name: "Apara Ekadashi",
+                meaning: "Limitless",
+                benefit: "Grants limitless wealth and fame; removes guilt.",
+                image: "https://images.unsplash.com/photo-1518002171953-a080ee817e1f?q=80&w=800&auto=format&fit=crop"
+            },
+            {
+                month: "May",
+                date: "27",
+                day: "Wednesday",
+                name: "Padmini Ekadashi",
+                meaning: "The Lotus (Adhik Maas)",
+                benefit: "Rare Ekadashi. Grants the merit of visiting all holy places.",
+                image: "https://images.unsplash.com/photo-1516544837508-e21295b28e6c?q=80&w=800&auto=format&fit=crop"
+            },
+            {
+                month: "June",
+                date: "11",
+                day: "Thursday",
+                name: "Parama Ekadashi",
+                meaning: "Supreme (Adhik Maas)",
+                benefit: "Rare Ekadashi. Removes poverty and grants opulence.",
+                image: "https://images.unsplash.com/photo-1564507592333-c60657eea523?q=80&w=800&auto=format&fit=crop"
+            },
+            {
+                month: "June",
+                date: "25",
+                day: "Thursday",
+                name: "Nirjala Ekadashi",
+                meaning: "Waterless",
+                benefit: "The toughest fast. Grants the merit of observing all 24 Ekadashis at once.",
+                image: "https://images.unsplash.com/photo-1536323760109-ca8c07450053?q=80&w=800&auto=format&fit=crop"
+            },
+            {
+                month: "July",
+                date: "10",
+                day: "Friday",
+                name: "Yogini Ekadashi",
+                meaning: "The Ascetic",
+                benefit: "Cures skin diseases and cleanses the karma of indulgence.",
+                image: "https://images.unsplash.com/photo-1545389336-cf090694435e?q=80&w=800&auto=format&fit=crop"
+            },
+            {
+                month: "July",
+                date: "25",
+                day: "Saturday",
+                name: "Devshayani Ekadashi",
+                meaning: "God Sleeps",
+                benefit: "Marks the beginning of Chaturmas (4 holy months). Ideal for vows.",
+                image: "https://images.unsplash.com/photo-1557095689-548c77227d81?q=80&w=800&auto=format&fit=crop"
+            },
+            {
+                month: "August",
+                date: "09",
+                day: "Sunday",
+                name: "Kamika Ekadashi",
+                meaning: "Fulfiller of Wishes",
+                benefit: "Powerful for forgiveness of sins and fulfillment of desires.",
+                image: "https://images.unsplash.com/photo-1560731006-2dc04a9d7023?q=80&w=800&auto=format&fit=crop"
+            },
+            {
+                month: "August",
+                date: "23",
+                day: "Sunday",
+                name: "Putrada Ekadashi",
+                meaning: "Giver of Sons",
+                benefit: "Observed for the well-being of children or to be blessed with a child.",
+                image: "https://images.unsplash.com/photo-1544367563-12123d8d5e58?q=80&w=800&auto=format&fit=crop"
+            },
+            {
+                month: "September",
+                date: "07",
+                day: "Monday",
+                name: "Aja Ekadashi",
+                meaning: "Unborn",
+                benefit: "Removes ignorance and past grievances.",
+                image: "https://images.unsplash.com/photo-1550949988-d14742e91125?q=80&w=800&auto=format&fit=crop"
+            },
+            {
+                month: "September",
+                date: "22",
+                day: "Tuesday",
+                name: "Parsva Ekadashi",
+                meaning: "Turning Side",
+                benefit: "Lord Vishnu turns in his sleep. Grants spiritual enlightenment.",
+                image: "https://images.unsplash.com/photo-1561577555-5c942914106e?q=80&w=800&auto=format&fit=crop"
+            },
+            {
+                month: "October",
+                date: "06",
+                day: "Tuesday",
+                name: "Indira Ekadashi",
+                meaning: "Powerful",
+                benefit: "Dedicated to ancestors (Pitru). Grants salvation to forefathers.",
+                image: "https://images.unsplash.com/photo-1499540633125-484965b60031?q=80&w=800&auto=format&fit=crop"
+            },
+            {
+                month: "October",
+                date: "22",
+                day: "Thursday",
+                name: "Papankusha Ekadashi",
+                meaning: "Goad of Sins",
+                benefit: "Controls the elephant of the mind. Grants heavenly pleasures.",
+                image: "https://images.unsplash.com/photo-1554189097-ffe88e998a2b?q=80&w=800&auto=format&fit=crop"
+            },
+            {
+                month: "November",
+                date: "05",
+                day: "Thursday",
+                name: "Rama Ekadashi",
+                meaning: "Goddess Lakshmi",
+                benefit: "Named after Lakshmi. Brings domestic peace and happiness.",
+                image: "https://images.unsplash.com/photo-1577083639236-0f555f0b793d?q=80&w=800&auto=format&fit=crop"
+            },
+            {
+                month: "November",
+                date: "20",
+                day: "Friday",
+                name: "Devutthana Ekadashi",
+                meaning: "God Awakens",
+                benefit: "End of Chaturmas. Highly auspicious for beginning new ventures.",
+                image: "https://images.unsplash.com/photo-1629814249584-bd4d53cf0e7d?q=80&w=800&auto=format&fit=crop"
+            },
+            {
+                month: "December",
+                date: "04",
+                day: "Friday",
+                name: "Utpanna Ekadashi",
+                meaning: "Origin",
+                benefit: "Celebrates the birth of the Ekadashi Goddess. Builds willpower.",
+                image: "https://images.unsplash.com/photo-1531688640702-861c28c31276?q=80&w=800&auto=format&fit=crop"
+            },
+            {
+                month: "December",
+                date: "20",
+                day: "Sunday",
+                name: "Mokshada Ekadashi",
+                meaning: "Liberation",
+                benefit: "Also Gita Jayanti. Grants Moksha and clears the path to Vaikuntha.",
+                image: "https://images.unsplash.com/photo-1623933990660-14eb0a693cb8?q=80&w=800&auto=format&fit=crop"
+            }
+        ];
+
+        const grid = document.getElementById('calendar-grid');
+
+        ekadashiData.forEach(item => {
+            const card = document.createElement('div');
+            card.className = "bg-white rounded-xl overflow-hidden card-shadow flex flex-col h-full border border-gray-100";
+            
+            card.innerHTML = `
+                <div class="h-40 overflow-hidden relative">
+                    <img src="${item.image}" alt="${item.name}" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                    <div class="absolute top-0 right-0 bg-amber-500 text-white px-3 py-1 m-3 rounded-md text-xs font-bold uppercase tracking-wider shadow-lg">
+                        ${item.month}
+                    </div>
+                </div>
+                <div class="p-6 flex-grow flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-baseline mb-2">
+                            <span class="text-4xl font-bold text-gray-800 mr-2 serif">${item.date}</span>
+                            <span class="text-sm text-gray-500 font-medium uppercase tracking-wide">${item.day}</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-indigo-900 mb-1">${item.name}</h3>
+                        <p class="text-amber-600 text-sm font-semibold mb-3">"${item.meaning}"</p>
+                        <p class="text-gray-600 text-sm leading-relaxed">${item.benefit}</p>
+                    </div>
+                </div>
+            `;
+            grid.appendChild(card);
+        });
+    </script>
+</body>
+</html>
